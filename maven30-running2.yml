@@ -1,0 +1,561 @@
+=========================
+  Develops, Tests, Builds, qualification, backup  
+   deploys & monitors applications 
+  Applications are the output from Softwares development 
+DevOps Engineer:  
+Dev - Ops
+  Dev = Development [ Python / java /  ]  
+  Ops = Operations  [Linux systems / ] 
+
+DevSecOps Engineer :   
+  Dev = Development  
+  Sec = Security 
+  Ops = Operations  
+
+  Dev = Development: 
+    Developers are writing application codes  in:
+        Python
+        java
+        nodeJS 
+        .NET
+       JAVASCRIPT
+ Developers should implement best practices in coding:
+ Examples of best practices for coding are:
+   1: use a DVCS - Git for versioning
+   2. use for CLI over GUI to manage git
+   3. Use IDEs 
+   4. Write portable code  
+   5. avoid duplications by using Functions/packages
+   6. Use a SCM/Github in your projects  
+   7. use git best branching strategy 
+         developmentBranch      ---> dev environment    
+         stageBranch            ---> UAT/QA/TESTING 
+         materBranch            ---> production
+           bug/hot_fixed_spicy
+           feature_  
+  8. write good READme.md file for better understanding 
+  9. Use .gitignore for files that are not part of the code 
+     and shouldn't be tracked by git 
+       app.java .classpath      
+  
+  10. Use git diff to review changing before merging 
+        git diff dev -    
+  12. use Pull Request for review by team members before 
+      merging in the masterBranch   
+        Paul --->   
+  13. commit frequently and avoid merge conflict 
+      commit before switching branches 
+      Do not commit half done work
+
+
+git commands:
+  git init/status/add/commit/merge/rebase/branch/switch 
+  git log/show/tag/cherry-pick/stash/   
+  git clean/revert/reset/diff   
+  git pull/push/fetch    
+
+       working area       staging area   localRepo       remoteRepo  
+files     red                 green  
+       git-clean  
+         <----------------- git-reset  
+         <-------------------------------git-revert cID  
+
+
+ticket_001457_app.py 
+ticket_001457_app.java  
+app.py   
+app.java  
+
+  Fried rice:
+    kitchen ---  
+
+a. A git branch is a development line = 
+     master
+
+Maven:
+Build Tools:  
+===========
+  SDLC-->
+Devops Process:
+  Devops--> 
+            Coding --> Testing--> Build -->  Deployed 
+
+  Build Tools are use to create deployable packages  -- Tomcat
+What does Build Tools achieved?:
+  use to create deployable packages  
+     raw code + build = packages that the deployment servers can interpretes 
+
+Projects are developed using programming languages including:
+  java 
+  python 
+  nodeJS 
+  .NET
+  JAVASCRIPT
+  etc.
+
+What kind of projects are you supporting in your environment(Landmark)?  
+answer:
+We support java based projects or projects written in java.
+  and a few .NET and NodeJS projects
+  We support apps written in java,.NET, NodeJS by developers 
+  java, .NET, NodeJS is a programming language
+
+Build Tools:
+  java : 
+    MAVEN/
+    ANt/
+    Gradle     
+.Net:
+----
+  NaNt
+  MSBuild
+JAVASCRIPT:
+-----------
+  Gulp
+  Grunt
+Python:
+-------
+  PyBuilder
+
+Ruby:
+----
+  Rake
+
+NodeJS:
+  npm
+
+For java:
+  ANt / Gradle /  maven
+
+Maven:
+Apache Maven is a software project management and comprehension tool. 
+It is based on the concept of a project object model (POM),
+Maven can manage a project's build, reporting and documentation.
+
+Maven is an open java based build tool.  
+
+What is expected from developers:
+  Project main composition:    
+  src: = source Code   
+  unit-test-Cases   
+  BuildScripts 
+
+code:
+  print('Hello Engineers')
+  echo 'Hello Engineers'
+    50,000 Lines of code written by developers  
+
+UnitTestCase:
+  if [ -e hello] then  
+  print('okay')
+
+ Selenium should be integrated in the development environment
+
+Project Tesla25
+===============
+ source Code     = 50k lines  
+ unit-test-Cases = 20k lines  
+
+The process of writing and running unit-test-Cases is called:
+  Unit Testing  
+
+This is refer to as Unit Testing  
+Testing individual units/components or each line of the code  
+
+Who writes unit test cases     = developers  
+who performs/runs unit testing = developers  
+
+Maven Build Tools:
+-----------------
+https://maven.apache.org/download.cgi
+
+MAVEN = is an open source Java BASED Build  tool
+        It was originally developed in java for java codes 
+        The vendor of maven is apache  
+
+Any software is available in three options:
+Licence edition : The software is paid for
+Free edition: Software is given for free BUT
+      without source code
+      How the software is developed is not shared.
+Open source edition: 
+   Implies both the software and 
+   the source code are freely available.      
+   You can download the source code and 
+   develop on the existing features
+
+Navigator:
+  Platinum Sport  - 150k 
+  Comfort         - 130k
+  Basic           - 105k  
+
+IQ: Explain you experience in open source technologies?
+      1. Maven 
+      2. Linux OS  
+
+cocacola: 
+
+KFC :
+  Recipe (SECRET) 
+  FREE--
+
+  open source Softwares technologies:
+       NO Licence / free Licence
+       Recipe IS GIVEN FOR FREE
+Linux over windows ()
+
+Linux  : 
+  RedHat = RedHat  (IBM)   
+  CentOS = 
+  Ubuntu = ubuntu 
+  Amazon Linux = Amazon 
+--- 4:50pm EST  
+
+Build means: 
+  creating deployable packages from raw codes.
+     compiling and 
+       Hello.java  --> 
+       hello.py    --> 
+
+We need a compiler to compile:
+java software is required for compiling java codes.  
+
+code = hello.java, app.java 
+
+hello.java =  echo "Tesla Electric cars 2023"
+
+javac app.java
+javac hello.java  ---> 
+      This create java classes   
+      hello.class[binary file = 012310123345] 
+      app.class[binary file   = 012310123345]
+      
+sh  hello.sh 
+
+JVM only read binary files 
+jvm = Java Virtual Machine 
+----
+
+=== Couple/USA ---  ====
+=== Canada 
+=== Canada 
+
+app.java  
+  10 modules
+
+development  ----> stageBranch ---> masterBranch
+                   1 reviewers   3 reviewers 
+
+development  ----> stageBranch ---> masterBranch/release  
+                   1 reviewers   3 reviewers 
+
+authentication:
+  userName/Password 
+  userName/Token 
+  ssh-keys  [ 30days  ] 
+ 
+
+visaRepo-url      = You Did 
+Group12Repo-url   = TeamLead [write]
+
+   mkdir visa && cd visa 
+     git init 
+     git remote add visa  visaRepo-url  
+     git push visa master      
+   mkdir group12 
+     git init 
+     git remote add g12 Group12Repo-url  
+     git branch dev_james
+     git push g12 dev_james 
+    git pull 
+   git commit --amend 
+====================================================
+Maven installation:
+https://maven.apache.org/download.cgi
+  Maven can be installed in Any platform:
+    Linux --: 
+      RedHat / Ubuntu / CentOS
+    Windows:
+      server2012/2016/2019 
+      Windows XP/7/8/10/11
+    MacOS :
+
+    Solaris:   
+
+Ticket_maven-001 
+Install Maven on a RedHat Linux 8 Server  
+
+2. Java is a pre-requisite for maven to run 
+    JRE --> JAVA RUNTIME ENVIRONMENT
+    JDK --> JAVA DEVELOPMENT KIT 1.8+
+            JVM will also be installed
+
+   openJDK1.8+,  // openJDK4.1   
+==============
+https://github.com/LandmakTechnology/package-management
+https://github.com/LandmakTechnology/package-management/blob/master/Maven-installation/READme.md
+  publicIP = 3.223.191.159
+  userName = ec2-user 
+  ssh-key  = class30key.pem  
+    ssh -i class30key.pem ec2-user@3.223.191.159
+
+MHD = /opt/maven [M2_HOME]:
+export M2_HOME=/opt/maven
+export PATH=$PATH:$M2_HOME/bin
+MHD = /opt/maven 
+The MHD is where the maven software is extracted.
+   wget url  
+   unzip  maven.zip  
+
+interac: = 
+   /app/maven  
+MHD (M2_HOME) COMPRISES OF:
+  bin    --- binary files
+             mvn   
+  boot  
+  conf   --- configuration files 
+             settings.xml
+  lib    --- jar files and libraries 
+  LICENSE  
+  NOTICE  
+  README.txt
+==============================================
+Ticket_0014_build_apps  
+ maven builds and manage applications for codes 
+ in our environment :
+
+Generally We have:
+  stanalone applications - jar [app.jar]
+  web applications   - war [app.war] 
+  enterprise applications - ear 
+
+maven: creates packages (jar, war and/OR ear)
+  jar: Standalone Applications
+    ebay.jar
+    paypal.jar
+    tesla.jar 
+    *jar  
+
+  war: web Applications
+    boa.war
+    tesla.war
+
+  ear: Enterprise Applications
+    aa.ear 
+    tesla.ear
+    td.ear 
+Archieves:
+  tar files = tesla.gz.tar   
+  zip files = tesla.zip 
+  tesla.jar  
+  tesla.war  
+  tesla.ear  
+
+Standalone Applications – *.jar  Java Archieve
+=============================================  
+ java code ONLY   
+    contains only java classes
+    jar = .classfiles
+    maven-standalone-application.jar
+    app.jar     
+
+Web Applications  – .war  web Archieve
+======================================
+Java code + 
+web content ( CSS, HTML, JS, images…,) 
+Backend code   - frontend code
+maven-web-app.war
+tesla.war
+
+Enterprise applications – .ear –
+==================================
+ Enterprise Archieve
+    Multiple Modules
+      Java code + web content 
+    Ear =  war(s) + jar(s)
+    Banking applications
+    maven-web-application.war
+    maven-enterprise-application.ear
+      app.war / 
+      myapp.ear / 
+      apps.war / 
+      app30.war  
+
+Based on our project we are going to create 
+   multiple packages either;  jar, war or ear packages:
+====================
+What are we building?
+ we are building from java codes:
+  1.  src-- source code:
+
+  2.  Unit-Test-Cases: 
+         JAVA  --> JUnit test cases 
+         .Net  --> NUnit test cases 
+          C++  --> CPPUnit test cases   
+  
+  3. BuildScripts -- pom.xml:  
+        xml  = extensible mark-up language 
+               It is a dynamic. 
+               Tags can be created based on the user   
+        html = hyperText mark-up language
+               It comes with pre-define tags that can't be changed 
+               TAGS: h1, h2, h3, p, 
+      
+  Welcome to to Landmark 
+
+   bash-shell = echo "Hello, Welcome to to Landmark" 
+   html       = <h1> Hello, Welcome to to Landmark </h1>
+   html       = <h2> Hello, Welcome to to Landmark </h2>
+   xml = tag = hello / w / legah 
+               <hi> Hello, Welcome to to Landmark </hi>
+               <hello> Hello, Welcome to to Landmark </hello> 
+               <greet> Hello, Welcome to to Landmark </greet>  
+
+Standalone Applications
+Ticket_saa_tesla0014  
+===================
+Requirements:
+1. project repository in the SCM [GitHub / GitLab]
+https://github.com/Landmark-Technologies/maven-standalone-application
+2. We need a server with java & maven installed and configured   
+3. Create a project directory in the maven/build server
+    mkdir java-projects  
+4. Clone the codes from github in the project directory  
+   git clone https://github.com/Landmark-Technologies/maven-standalone-application
+
+  src/main  
+  src/test
+  pom.xml 
+
+Maven uses dependencies and plugins to test and create packages. 
+Examples of maven dependencies 
+   Selenium 
+   JUNit 
+   log4j
+build.gradle   --- BuildScript for gradle
+pom.xml  --- BuildScript for maven
+pom = project object model      
+dependencies:  
+plugins:    
+properties: 
+version:
+  1.0.0
+tag: 
+  .jar
+FinalName:
+  app  
+     app-1.0.0.jar  
+
+==================
+where are these dependencies found/located??? :
+  https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/4.6.0
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.6.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+<dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
+
+where are these dependencies found/located??? :
+  1. Maven local repository 
+      .m2/repository = default 
+  2. Maven remote/proxy repository 
+  3. Maven central repository
+      https://mvnrepository.com/repos/central
+
+IQ : Explain the maven lifecycle  ??
+Maven has 3 lifecycles: 
+  Clean, 
+  site/swagger and 
+  default
+  Clean, site and default
+
+
+Lifecycles      Goal(s)
+----------      -----   
+Clean            clean  (mvn clean)
+ mvn clean          delete old builds 
+
+Site/Swagger     site
+                   create java classes (byte code)
+                   JVM 
+                   app.java = 'echo DevOps is great'
+                   app.class = 012450012354
+                    Goals  :
+default        mvn validate:
+                  It will validate the project structure and resource files
+               mvn compile:
+                  It will compile all java classes and test cases
+               mvn test:
+                  It will run the unit test cases (JUNit)
+               mvn package:
+                  It will create packages in target directory 
+                      (*.jar/*.war/*ear) app.war
+               mvn install:
+                  It will store the build artifacts in MAVEN LOCAL REPO
+                     default location: .m2/repository
+               
+               mvn deploy:  NEXUS
+                  It will upload the build artifacts into maven-remote-repo
+----------
+mvn package: 
+  1. validate
+  2. compile 
+  3. RunUnitTesting 
+  4. create the packages [jar/war/ear]
+
+Maven uses plugins/dependencies in th build Process.
+   ls -a ~
+   ls -a /home/ec2-user  
+    mavenLocalRepo = .m2/repository  
+
+    Total time:  6.730 s
+    Total time:  1.620 s
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+ 
+[ec2-user@maven msa]$ ls /home/ec2-user/.m2/repository/
+    backport-util-concurrent  
+    classworlds  
+    com  
+    commons-cli  
+    commons-io  
+    commons-logging  
+    junit  
+    log4j  
+    org
+[
+
+maven-stanalone-application-0.0.1-SNAPSHOT.jar 
+
+MavenLocalRepo --- proxy --- central/internet   
+rm -rf  /home/ec2-user/.m2/
+Securing the maven local repo:
+  1. By creating a custom maven local repo  
+       .m2/repository/
+     settings.xml  
+        /home/ec2-user/mlr  
+   vi /opt/conf/maven/settings.xml  
+  
+  <!-- localRepository
+   | The path to the local repository maven will use to store artifacts.
+   |
+   | Default: ${user.home}/.m2/repository
+  <localRepository>/path/to/local/repo</localRepository>
+  <localRepository>/home/ec2-user/mlr/</localRepository>
+  -->
+  <localRepository>/home/ec2-user/mlr/</localRepository>
+
+
